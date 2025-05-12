@@ -5,7 +5,7 @@ FROM nginx:latest
 # COPY ./nginx.conf /etc/nginx/nginx.conf
 
 # Copia los archivos HTML al directorio de Nginx
-COPY ./html /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
 
 # Exponer el puerto 80
 EXPOSE 80
